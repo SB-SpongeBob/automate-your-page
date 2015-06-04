@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+    	<title>Joy's Notes</title>
+    	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+ 		<h1>Telling Computers What to Do</h1>
+  			<div class="lesson">
+    			<h2>Lesson 1: Introduction to "Serious" Programming</h2>
+  	  			<div class="concept">
+      				<div class="concept-title">
+        				Computer
+      				</div>
+      				<div class="concept-description">
+			          	A universal machine. We can program it to do essentially any computation.
+			        </div>
+				</div>
+			    <div class="concept">
+			      	<div class="concept-title">
+			        	Computer Program
+	      			</div>
+				    <div class="concept-description">
+				        Very precise sequence of steps.
+				    </div>
+				</div>
+			    <div class="concept">
+			      	<div class="concept-title">
+			        	Programming Language
+			      	</div>
+			      	<div class="concept-description">
+				        A programming language is what programmers use to tell a computer what to do. Python is one example of a programming language.
+			      	</div>
+			    </div>
+			    <div class="concept">
+			      	<div class="concept-title">
+			        	Python
+			      	</div>
+			      	<div class="concept-description">
+				        An interpreter. It runs our programs, it interprets them, executes the programs that we wrote in Python language by running a program in a language that the computer can understand directly.
+			      	</div>
+			    </div>
+			    <div class="concept">
+			      	<div class="concept-title">
+			        	Grammar
+			      	</div>
+			      	<div class="concept-description">
+				        Programming languages have grammars. Have to write code that is exactly correct according to the Python interpreter, otherwise will have errors.
+			      	</div>
+			    </div>
+			    <div class="concept">
+			      	<div class="concept-title">
+			        	Python Expressions
+			     	 </div>
+			      	<div class="concept-description">
+				        <p>
+				          A Python "expression" is a legal Python statement. For example: <span class="code">print 1 + 1</span> is a valid expression, but <span class="code">print 1 +</span> (without a number at the end) is not.
+				        </p>
+			            <img src="img/grammar.png" alt="Python Grammar"> 
+			        </div>
+			    </div>
+			    <div class="concept">
+			      	<div class="concept-title">
+			        	Getting integer or decimal answers in Python
+			      	</div>
+			      	<div class="concept-description">
+				         If I use integer only in Python codes, Python will give integer only. If I use decimal in my code, Python will produce decimal answers For example: <span class="code">1/10</span> gives 0, but <span class="code">0.1/10</span> gives 0.1.
+			      	</div>
+			    </div>
+			</div>
+	  		<div class="lesson">
+    			<h2>Lesson 2: Variables and Strings</h2>
+			  	<div class="concept">
+			      	<div class="concept-title">
+			        	Variables
+			      	</div>
+			      	<div class="concept-description">
+				        For better code readability (Make the code understandable by just looking at the code). Variables can vary based on assigned values (therefore it is not same as =). = in programming means assignment.
+			      	</div>
+			    </div>
+			    <div class="concept">
+			      	<div class="concept-title">
+			        	String
+			      	</div>
+			      	<div class="concept-description">
+				        Sequence of characters surrounded by quotes. E.g. &apos;I am a string!&apos; or &quot;I&apos;m happy.&quot; Can use TRIPLE quotes to create a multi-line string.
+			      	</div>
+			    </div>
+			    <div class="concept">
+			     	<div class="concept-title">
+			        	Indexing Strings
+			      	</div>
+			      	<div class="concept-description">
+				        <div class="code-block">
+				        	&lt;string&gt;&lsqb;&lt;expression&gt;&rsqb;
+				        </div>
+				        <p>
+			           	<img src="img/Indexing_string.png" alt="Indexing String">
+			           	</p>
+			        	When count from the back: &apos;udacity&apos; &#8594; u&lpar;-7&rpar;, d&lpar;-6&rpar;, a&lpar;-5&rpar;, c&lpar;-4&rpar; i&lpar;-3&rpar;, t&lpar;-2&rpar;, t&lpar;-1&rpar;
+			      	</div>
+			    </div>
+				<div class="concept">
+		      		<div class="concept-title">
+		        		Sub-Sequences 
+		      		</div>
+		      		<div class="concept-description">
+				        <p>
+				        	It works even when we index position that doesn&apos;t exist in the string. 
+				        </p>
+				           	<div class="code-block">
+				        	s = &apos;Hi&apos;<br>
+				        	Print s[3] will result in error<br>
+				        	Print s[3:] will show no result as position 3 and beyond are all empty but no error.
+				        	</div>
+				        <p>
+				          	<img src="img/subsequence.png" alt="Sub-Sequence">	
+				        </p>
+			      	</div>
+		    	</div>
+				<div class="concept">
+		      		<div class="concept-title">
+		        		find 
+		      		</div>
+		      		<div class="concept-description">
+		               	<p>
+		               		<img src="img/find.png" alt="Finding Strings in Strings">
+		               	</p>
+		       	        <div class="code-block">
+		        			print &quot;text&quot;.find&lpar;&quot;text&quot;&rpar; # prints 0 <br>
+							print &quot;text&quot;.find&lpar;&quot;Text&quot;&rpar; # prints -1 <br>
+							print &quot;text&quot;.find&lpar;&quot;&quot;&rpar; # prints 0 <br>
+							print &quot;text&quot;.find&lpar;&quot; &quot;&rpar; # prints -1
+		        		</div>
+		        		<p>
+		       	        	<img src="img/find2.png" alt="Finding Strings in Strings from a position">
+		       	        </p>
+		      		</div>
+		    	</div>
+		    </div>	
+			<div class="lesson">
+    			<h2>Lesson 3: Input &#8594; Function &#8594; Output</h2>
+			  	<div class="concept">
+			      	<div class="concept-title">
+			        	Using Procedures &#40;functions&#41;
+			        </div>
+			      	<div class="concept-description">
+				        <p>
+				        	Procedures are like mapping inputs to outputs. Procedures&lpar;Functions&rpar; take input, do something with it, and then produce output.
+				        </p>
+				        	<div class="code-block">
+				        	&lt;procedure&gt;&#40;&lt;input&gt;,&lt;input&gt;, ...&#41;
+				        	</div>
+				    	<p>
+				        	Define functions using def and then giving a function name followed by the function parameters in parentheses.&#40;Marking&#41;
+				        </p>
+				            <div class="code-block">
+	            				def square&#40;x&#41;: <br>
+	            				<span class="indent">answer = x &ast; x</span><br>
+	            				<span class="indent">return answer</span>
+	            			</div>
+	            		<p>
+	            			We use functions by writing code as below.&#40;Using&#41;
+	            		</p>
+							<div class="code-block">
+            					print square&lpar;4&rpar;<br>
+            					&rarr; 16
+          					</div>
+	            	</div> 
+				</div>
+				<div class="concept">
+	      			<div class="concept-title">
+	        			How do functions help programmers avoid repetition?
+	      			</div>
+	      			<div class="concept-description">
+			        	Functions are tools that programmers can create and reuse forever! Once you've defined a function once, you never have to define it again.
+
+		      		</div>
+	    		</div>
+	    		<div class="concept">
+	      			<div class="concept-title">
+	        			What happens if a function doesn't have a  <span class="code">return</span> statement?
+	      			</div>
+	      			<div class="concept-description">
+			        	No output from function. In python it produces output as <span class="code">None</span>. It also doesn't change the value of variables.
+		      		</div>
+	    		</div>
+	    	</div>
+	    	<div class="lesson">
+    			<h2>Lesson 4: Control Flow and Loops: If and While</h2>
+			  	<div class="concept">
+			      	<div class="concept-title">
+			        	Equality Statements
+			        </div>
+			      	<div class="concept-description">
+				        <img src="img/equality.png" alt="Equaltiy Statements">
+				        <p>
+				        	In programming, = means assignement and == means equal.
+	            		</p>
+	            	</div> 
+				</div>
+				<div class="concept">
+			      	<div class="concept-title">
+			        	If Statement
+			        </div>
+			      	<div class="concept-description">
+				        <img src="img/if_1.png" alt="If Statement">
+				        <p>
+				        	<img src="img/if_2.png" alt="If Statement">
+	            		</p>
+	            	</div> 
+				</div>
+				<div class="concept">
+			      	<div class="concept-title">
+			        	Or Statement
+			        </div>
+			      	<div class="concept-description">
+				        <img src="img/or_1.png" alt="Or Statement">
+				        <p>
+				        	<img src="img/or_2.png" alt="Or Statement">
+	            		</p>
+	            	</div> 
+				</div>
+				<div class="concept">
+			      	<div class="concept-title">
+			        	While loop
+			        </div>
+			      	<div class="concept-description">
+				        <img src="img/while_loop.png" alt="While Loop">
+				        <p>
+				        	A function can only return something once, and a return statement will break any sort of loop &lpar;for or while&rpar;. 
+	            		</p>
+	            	</div> 
+				</div>
+				<div class="concept">
+			      	<div class="concept-title">
+			        	Break Time
+			        </div>
+			      	<div class="concept-description">
+				        <img src="img/break_time.png" alt="Break Time">
+				    </div> 
+				</div>
+			</div>
+			<div class="lesson">
+    			<h2>Lesson 5: Debugging</h2>
+				<div class="concept">
+			      	<div class="concept-title">
+			        	Debugging Strategy 
+			        </div>
+			      	<div class="concept-description">
+			      		<p>
+					        <b>1. Examine error messages when programs crash</b><br>
+							The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem occurred.
+						</p>
+						<p>
+							<b>2. Work from example code</b><br>
+							If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.
+						</p>
+						<p>
+						<b>3. Make sure examples work</b><br>
+						Just because you find example code doesn&apos;t mean it will work in your system. Check the example code you&apos;re using to make sure it behaves the way you expect.
+						</p>
+						<p>
+						<b>4. Check (print) intermediate results</b><br>
+						When your code doesn&apos;t crash, but doesn&apos;t behave as expected, add print statements to your program to see where in the code things stop behaving correctly.
+					</p>
+					<p>
+						<b>5. Keep and compare old versions</b><br>
+						When you have a working version of your code, save it before you add to the code. This will give you something to go back to if you introduce too many new bugs.
+					</p>
+				    </div> 
+				</div>
+			</div>
+			<div class="lesson">
+    			<h2>Lesson 6: Structured Data - lists and For Loops</h2>
+			  	<div class="concept">
+			      	<div class="concept-title">
+			        	Structured Data - String vs List
+			        </div>
+			      	<div class="concept-description">
+				        <img src="img/List.png" alt="String vs List">
+				        <p>
+				        	Strings and Lists are structured data i.e. has a sequence and can operate on the sub-sequences. Lists can be accessed and sliced like how we accessed and sliced strings. <br>
+				        	While strings can contain characters only, lists can contain anything e.g. string, numbers, string + number, lists within the list &lpar;nested&rpar;etc. List is ordered.
+	            		</p>
+	            		<img src="img/nested_list.png" alt="Nested List">
+	            	</div> 
+				</div>
+				<div class="concept">
+					<div class="concept-title">
+			       		Mutation
+			    	</div>
+			      	<div class="concept-description">
+				        <img src="img/mutation1.png" alt="Mutation1">
+				        <p>
+				        	We cannot change the value of a string &lpar;we can only creating new strings by assigning to new values&rpar; but in List we can. List supports mutation i.e. we can change the value of a list after we have created it.<br>
+				        	In below example, even though we did not change the assignment in q, it changed the value of q because q refers to the same object as p.
+	            		</p>
+	            		<img src="img/mutation2.png" alt="Mutation2">	
+	            	</div>
+	            </div>
+	            <div class="concept">
+	            	<div class="concept-title">
+			       		Aliasing
+			    	</div>
+			      	<div class="concept-description">
+				        <img src="img/aliasing.png" alt="Aliasing">
+				        <p>
+				        	When we have 2 different ways to refer to the same object, this is called Aliasing. 
+	            		</p>
+	            	</div>
+	            </div>
+				<div class="concept">
+	            	<div class="concept-title">
+			       		Other List Operations
+			    	</div>
+			      	<div class="concept-description">
+			      		<ol>
+				        	<li>&lt;list&gt;.append&#40;&lt;element&gt;&#41;: What we pass in is the element we want to append to the list. Append will add a new element to the end of a list. It is mutating the list that it;s invoked on, NOT creating a new list.</li>
+				        	<li>&lt;list&gt;+&lt;list&gt;: It concatenates the lists and produces a new list. It doesn&apos;t mutate either the input lists.</li>
+				        	<li>len&lt;list&gt;: It works for any object that&apos;s a collection of things &lpar;e.g. lists, strings&rpar; and the output from len is the number of elements in the input. It only counts the outer element. If 1 of the elements of a list is a list, it doesn&apos;t matter how many elements that list contains.</li> 
+				        	<li>for loops: Use <span class=italic>for loops</span> to go through a list of strings and on nested lists. For each element in the list, we are going to assign that element to the name and evaluate the block. And we’ll do that in order going through the list.<br>
+				        	<img src="img/for_loop.png" alt="For Loops"></li>
+				        	<li>Index, in and not in<br>
+				        	<img src="img/index.png" alt="Index"></li>	
+				        </ol>
+	            	</div>
+	            </div>
+	        </div>
+			<div class="lesson">
+    			<h2>Lesson 7: How to Solve Problems</h2>
+			  	<div class="concept">
+			      	<div class="concept-title">
+			        	Pythonista's Guide to All Problems in the Galaxy
+			        </div>
+			      	<div class="concept-description">
+				        <img src="img/solve_problem.png" alt="How to Solve Problems">
+				    </div> 
+				</div>
+			</div>
+	</body>
+</html>
